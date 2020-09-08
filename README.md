@@ -1,2 +1,2 @@
 # IntroToIM
-Repository for Intro to IM, Fall 2020
+##Repository for Intro to IM, Fall 2020
