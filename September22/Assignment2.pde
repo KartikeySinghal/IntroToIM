@@ -8,7 +8,8 @@ void draw() {
 
   background(random(100, 250), random(100, 250), random(100, 250)); //refreshes the background each second with a new pastel colour
 
-  text("Clock: " + time, 10, 15);  // displays the number of seconds on the actual sketch
+  fill(0);
+  text("Time: " + hour() +" : " + minute() + " : " + time, 10, 15);  // displays the number of seconds on the actual sketch
 
   drawRectangle(time, 25); // calls the function to draw the actual rectangles
 }
