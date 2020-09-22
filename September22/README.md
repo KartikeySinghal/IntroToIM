@@ -11,3 +11,5 @@ The above "clock" displays as many "tailed-rectangles" as the number of seconds 
 
 What I found interesting was how sensitive loops can be. I was playing around with the for loop that regulated the "tails" of the rectangles. And a slight change of that
 value from 1 to 1.1 resulted in gaps between that tail. I didn't realise that even that difference of 0.1 can have such an impact due to being added over time
+
+A difficulty I had was that I was trying to keep the background constant for 60 frames and then generate a new colour after each minute passes by in the system clock
