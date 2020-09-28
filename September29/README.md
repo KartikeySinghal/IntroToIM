@@ -12,5 +12,5 @@ As shown in the above picture, both the placement and the colour scheme of the s
 in this case differs from the random function. Where the random dunction can produce any colour on the spectrum, when genereated the colour using the noise function, it
 displays a more natural flow of color where the it flows naturally from extremelly dark blue(or any other colour) to extremely pale blue(or any other colour)
 
-The only difficulty I had with this assignment was that for some reason I was unable to type the correct spelling of "Sqaure" all throughout the code and had to correct 
+The only difficulty I had with this assignment was that for some reason I was unable to type the correct spelling of "Square" all throughout the code and had to correct 
 it at the end
