@@ -4,9 +4,9 @@
 
 For Assignment 3, rather than doing something super fancy, I wanted to study the effects of Perlin Noise on a simple piece of code
 
-![](Assignment3_withRandom.jpg)
+![](Assignment3_withRandom.jpg) ![](Assignment3_withNoise.jpg)
 
-![](Assignment3_withNoise.jpg)
+
 
 As shown in the above picture, both the placement and the colour scheme of the sqaures are regulated by Perlin Noise. It is interesting to see how the noise function 
 in this case differs from the random function. Where the random dunction can produce any colour on the spectrum, when genereated the colour using the noise function, it
