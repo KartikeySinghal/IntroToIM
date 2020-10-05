@@ -1,6 +1,8 @@
 # Assignment 4
 ## Create either a data visualization or a generative text.
 
+[Link](https://www.kaggle.com/abcsds/pokemon) for dataset
+
 
 For Assignment 4, I visualized this dataset called Pokedex which is a compliation of various attributes of all Pokemons throughout history
 
