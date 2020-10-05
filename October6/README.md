@@ -6,7 +6,7 @@
 
 For Assignment 4, I visualized this dataset called Pokedex which is a compliation of various attributes of all Pokemons throughout history
 
-![](Assignment4_FrontPage.jpg) ![](Assignment3_CircleGraph.jpg)
+![](Assignment4_FrontPage.jpg) ![](Assignment4_CircleGraph.jpg)
 
 Having been a fan of Pokemon since childhood, it was an obvious choice to do something with the Pokedex. In this program, the user is displayed an initial list of all the Pokemon types.
 Then the user is asked to enter the type they want to display the data of. The circles created are based on the Health Points of each character of that particular type. The higher 
