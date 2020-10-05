@@ -1,3 +1,4 @@
+//DataSet taken from: https://www.kaggle.com/abcsds/pokemon (License: Public Domain)
 //Pokemon Types: Grass, Fire, Water,Bug,Normal,Poison,Fairy,Fighting,Psychic, Rock,Electric,Ghost,Ice,Dark,Steel,Ground,Dragon,Misc.
 
 Table Pokemon; //initializes the table which will contain the required data
