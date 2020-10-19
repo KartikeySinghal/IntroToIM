@@ -8,4 +8,4 @@ Destroy as many astroids as possible without dying
 
 ### Inspiration:
 
-![Attari Astroid](asteroid,jpeg)
+![Attari Astroid](asteroid.jpeg)
