@@ -5,3 +5,7 @@ For the midterm project, I intent to recreate the astroid destroyer game. It wil
 
 ### Objective:
 Destroy as many astroids as possible without dying
+
+### Inspiration:
+
+![Attari Astroid](asteroid,jpeg)
