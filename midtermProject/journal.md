@@ -8,4 +8,4 @@ Destroy as many astroids as possible without dying
 
 ### Inspiration:
 
-![](asteroid.jpg)
+![](asteroids.jpg)
