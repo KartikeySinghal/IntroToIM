@@ -9,3 +9,6 @@ Destroy as many astroids as possible without dying
 ### Inspiration:
 
 ![](asteroids.jpg)
+
+#### 24th October:
+Since I was working on the project before making the journal, I added the progress I made so far. It inlcudes an infinite terrain generated using perlin noise and a ship. Both of these were made using beginShape-endShape. I also implemented the movement of the ship using W,S,A,D keys
