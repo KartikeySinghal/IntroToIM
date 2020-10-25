@@ -1,7 +1,7 @@
 //To Do List:
-//Place the ship at the centre
-//Work on generating asteroids
-//Figure out collision
+//Place the ship at the centre   -> done
+//Work on generating asteroids   -> done
+//Figure out collision           -> done
 //Add scoring system
 //Add system control loop
 //Start and end screen
@@ -20,15 +20,18 @@ float moving = 0;
 float[][] terrain;
 
 void setup() {        
-  fullScreen(P3D);
-  //size(1200, 1000,P3D);
+  //fullScreen(P3D);
+  size(1200, 1000, P3D);
   xTrans = width/2;
   yTrans = height/2;
   zTrans = 0;
   //rows = W /scls;
   //cols = H/scls;
   terrain = new float[cols][rows];
-  //frameRate(10);
+  astroid.drawAstroid();
+
+
+  //frameRate(2);
   //print(width/2,height/2);
 }
 
@@ -36,17 +39,44 @@ void draw() {
 
   background(0);
   gameStart();
-  
-  beginShape();
-  int angle = 360/10;
-  for (int i = 0; i < 10; i++) {
-        float x = cos( radians( i * angle ) ) * 10;
-        float y = sin( radians( i * angle ) ) * 10;
-        vertex( x, y);    
+  //astroid.drawAstroid();
+  //astroid.collision();
+}
+
+
+
+class Astroid {
+
+  float x, y, r;
+
+  Astroid(float size) {
+    x = 0;
+    y = 0;
+    r = size;
+    randomCord();
+  }
+
+  void randomCord() {
+    x = int(random(-400, width/2-100));
+    y = int(random(-400, height/2-100));
+  }
+
+  void drawAstroid() {
+    //print(x, y);
+    fill(57, 255, 20);
+    circle(x, y, r);
+    //collision();
+  }
+
+  void collision() {
+    //print("called" + "astroid : " + x + " " + y+ "ship : " + myShip.x + " " + myShip.y + "\r\n");
+
+    if (dist(astroid.x, astroid.y, myShip.x, myShip.y)<30) {
+      print("collision");
+      randomCord();
+      drawAstroid();
     }
-    endShape();
-  
-  
+  }
 }
 
 class SpaceShip {
@@ -81,7 +111,7 @@ class SpaceShip {
   }
 
   void MoveShip() {
-    print("Key is " + key,x,y);
+    //3print("Key is " + key, x, y);
     if (key == 'A'||key == 'a') {
       x-=Xspeed;
       if (x-Xspeed<=-500) {
@@ -135,12 +165,9 @@ class Landscape {
   }
 }
 
-//class Astroid {
-  
-//}
-
 SpaceShip myShip = new SpaceShip(0, 0, 0, 5, 5);
 Landscape myScape = new Landscape(rows, cols, scls);
+Astroid astroid = new Astroid(30);
 
 void gameStart() {
   moving -=0.07;
@@ -158,6 +185,8 @@ void gameStart() {
   pushMatrix();
   translate(xTrans, yTrans, zTrans);
   // print(width,height);
+  astroid.drawAstroid();
+  astroid.collision();
   myShip.DrawShip();
   popMatrix();
   //noLoop();
