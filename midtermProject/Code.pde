@@ -6,7 +6,7 @@
 //Fix speed increase system
 //Add system control loop        -> done
 //Add sound
-//Add astroid image
+//Add astroid image              -> done
 //Start and end screen           -> done
 //Documentation
 
