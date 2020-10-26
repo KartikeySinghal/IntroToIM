@@ -1,3 +1,8 @@
+//Name: Kartkey Singhal
+//Class: Intro to IM
+//Project: Midterm Project
+//Due Date: 27th October, 2020
+
 //To Do List:
 //Place the ship at the centre   -> done
 //Work on generating asteroids   -> done
