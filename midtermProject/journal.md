@@ -15,7 +15,7 @@ Since I was working on the project before making the journal, I added the progre
 
 
 #### 25th October:
-I added  a syte loop to start the program and call all other functions. I also made the astroid class which generates "astroids" which are simply circles at a random position. It also has a collision function which calculates the distance between the astroid's position and the ship's position. If the distance is less than 30 pixels(the astroid is a circle of size 30), it detects the collsion and generates a new astroid. It will eventually also increment the score.
+I added  a system loop to start the program and call all other functions. I also made the astroid class which generates "astroids" which are simply circles at a random position. It also has a collision function which calculates the distance between the astroid's position and the ship's position. If the distance is less than 30 pixels(the astroid is a circle of size 30), it detects the collsion and generates a new astroid. It will eventually also increment the score.
 
 
 #### 26th October:
