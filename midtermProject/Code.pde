@@ -2,9 +2,12 @@
 //Place the ship at the centre   -> done
 //Work on generating asteroids   -> done
 //Figure out collision           -> done
-//Add scoring system
-//Add system control loop
-//Start and end screen
+//Add scoring system             -> done
+//Fix speed increase system
+//Add system control loop        -> done
+//Add sound
+//Add astroid image
+//Start and end screen           -> done
 //Documentation
 
 float xTrans, yTrans, zTrans;
@@ -14,6 +17,9 @@ int H = 1400;
 int scls = 20;
 int rows = H/scls;
 int cols = W/scls;
+int userScore = 1;
+boolean playGame = false;
+boolean startScreen = true;
 
 float moving = 0;
 
@@ -38,12 +44,9 @@ void setup() {
 void draw() {
 
   background(0);
-  gameStart();
-  //astroid.drawAstroid();
-  //astroid.collision();
+  //gameStart();
+  startScreen();
 }
-
-
 
 class Astroid {
 
@@ -72,9 +75,10 @@ class Astroid {
     //print("called" + "astroid : " + x + " " + y+ "ship : " + myShip.x + " " + myShip.y + "\r\n");
 
     if (dist(astroid.x, astroid.y, myShip.x, myShip.y)<30) {
-      print("collision");
+      //print("collision");
       randomCord();
       drawAstroid();
+      userScore++;
     }
   }
 }
@@ -89,7 +93,6 @@ class SpaceShip {
     z = zCoord; 
     Yspeed = YSpeed;
     Xspeed = XSpeed;
-    //print(xCoord,yCoord);
   }
 
   void DrawShip () {
@@ -137,6 +140,13 @@ class SpaceShip {
       }
     }
   }
+
+  void increaseSpeed() {
+    while (int(userScore)%11 == 0) {
+      Xspeed++;
+      Yspeed++;
+    }
+  }
 }
 
 class Landscape {
@@ -165,13 +175,16 @@ class Landscape {
   }
 }
 
+
 SpaceShip myShip = new SpaceShip(0, 0, 0, 5, 5);
 Landscape myScape = new Landscape(rows, cols, scls);
 Astroid astroid = new Astroid(30);
 
 void gameStart() {
-  moving -=0.07;
 
+  print(myShip.Xspeed, myShip.Yspeed);
+
+  moving -=0.07;
   float yoff = moving;
   for (int y = 0; y<rows; y++) {
     float xoff = 0;
@@ -182,12 +195,14 @@ void gameStart() {
     yoff+=0.1;
   }
 
+  //myShip.increaseSpeed();
   pushMatrix();
   translate(xTrans, yTrans, zTrans);
   // print(width,height);
   astroid.drawAstroid();
   astroid.collision();
   myShip.DrawShip();
+
   popMatrix();
   //noLoop();
 
@@ -200,4 +215,52 @@ void gameStart() {
   popMatrix();
 
   myShip.MoveShip();
+  fill(255);
+  textSize(20);
+  text("Score: " + (userScore-1), 0, 20);
+}
+
+void startScreen() {
+
+  PImage img;
+  img = loadImage("logo.png");
+
+  if (playGame == false & startScreen == true) {
+    fill(255);
+    textSize(30);
+    image(img, width/2-258, height/2-450);
+    text("Instructions: ", width/2-258, height/2-160);
+    text("1. Move your ship using W,S,A,D", width/2-258, height/2-120);
+    text("2. Collide with asteroids to destroy them", width/2-258, height/2-80);
+    text("3. Boast your score in front of your friends", width/2-258, height/2-40);
+    text("Press Enter to Start||Press Backspace to End", width/2-270, height/2+200);
+  }
+  if (key == ENTER ) {
+    playGame = true;
+    userScore = 1;
+  }
+  if (key == BACKSPACE) {
+    playGame = false;
+    startScreen = false;
+    endScreen();
+  }
+  if (playGame==true) {
+    gameStart();
+  }
+}
+
+void endScreen() {
+  fill(255);
+  textSize(30);
+  text("Score:" + (userScore-1), width/2-20, height/2);
+  text("Press Enter to Start||Press Escape to Exit", width/2-258, height/2+100);
+  if (key==ESC) {
+    exit();
+    //stop();
+  }
+  
+  if (key == ENTER ) {
+    playGame = true;
+    userScore = 1;
+  }
 }
