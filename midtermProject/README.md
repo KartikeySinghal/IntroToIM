@@ -19,3 +19,6 @@ Destroy as many asteroids as possible without dying. The user dies when the spac
 ![](endGame.jpg)
 
 One of the major difficulties I had with this game was figuring out the nesting of various functions and classes. It was confusing how and where to call each function to make the game run smoothly and without an hiccups. I also had fun learning about p3D. I had trouble keeping track of the coordinate shift caused by using p3D. But the processing documentation helped a lot with that. All of the earlier projects in the semester used either one or the other concepts but it was interesting to put all of these concepts together to make a complete programme. 
+
+
+## Please dowload add unzip the zip file uploaded above to run the game
