@@ -4,6 +4,8 @@
 
 For Assignment 7, my puzzel is named Bacaca Road, named after a road in the Philipenes. It has 4 LEDs and 3 buttons. The player is supposed to press the 3 buttons in a specific order to win. If the buttons are pressed in the correct order, all the leds flash to indicate a win. If not, the red led blinks to indicate a loss. To restart, the reset on the arduino board can be used. 
 
+The solution comes from the name of the puzzle i.e. Bacaca Road. The key is that each leter corresponds to a button. So first button(yellow) is A, second button(green) is B and the third button(Red) is C. So if the user pressed the buttons in the order: B,A,C,A,C,A, the input will be correct and the user wins!
+
 Schematic:
 
 ![](schematic.jpg)
