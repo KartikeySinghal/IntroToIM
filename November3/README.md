@@ -10,5 +10,5 @@ Schematic:
 
 Video:
 
-![](WinCase.mp4)
+![](WinCase.gif)
 
