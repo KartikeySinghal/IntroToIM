@@ -6,9 +6,9 @@ For Assignment 7, my puzzel is named Bacaca Road, named after a road in the Phil
 
 Schematic:
 
-![](schematic_week7.pdf)
+![](schematic.jpg)
 
 Video:
 
-![](schematic_week7.pdf)
+![](schematic.jpg)
 
