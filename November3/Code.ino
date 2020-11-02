@@ -1,6 +1,6 @@
-int pushButton = 11;  //declares pin for the first button
-int pushButton2 = 12; //declares pin for the second button
-int pushButton3 = 13; //declares pin for the third button
+const int pushButton = 11;  //declares pin for the first button
+const int pushButton2 = 12; //declares pin for the second button
+const int pushButton3 = 13; //declares pin for the third button
 int correctOrd[] = {12, 11, 13, 11, 13, 11}; //213131
 int buttonSum = 0;  //tracks the sum of the value of pins of the button pressed
 int counter = 0; //vriable to track the number of buttons pressed
