@@ -12,3 +12,4 @@ Video:
 
 ![](WinCase.gif)
 
+It was difficult to figure out how to track userinputs in particular order and the compare it with the correct order. I tried to make an array of correct order and then compare it with the array of user input. But for some reason it didn't work the way I wanted to. So I ended up making a integer, "buttonSum" that the button value is added to. So for example if my first button is in pin 10 and if the user pressed it once, the "buttonSum" would be updated to 10.
