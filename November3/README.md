@@ -6,7 +6,7 @@ For Assignment 7, my puzzel is named Bacaca Road, named after a road in the Phil
 
 Schematic:
 
-![](schematic.jpg){:height="50%" width="50%"}
+![](schematic.jpg = 250x250)
 
 Video:
 
