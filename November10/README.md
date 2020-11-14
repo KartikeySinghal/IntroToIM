@@ -6,7 +6,7 @@ For Assignment 8, I wanted to experiment with sound. So I used a buzzer in combi
 
 Schematic:
 
-![](schematic.jpg)
+![](Schematic.jpg)
 
 Video:
 
