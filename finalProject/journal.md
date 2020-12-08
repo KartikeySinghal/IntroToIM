@@ -9,6 +9,7 @@
 
 #### 9th December:
 It took some time but I finally was able to get a second potentiometer for my project. These 2 potentiometers will act as knobs to draw on the drawing space. Today I just worked on the Arduino side of things with making the circuit and inputting values from both the potentiometers into Serial.
+
 ![](Preliminary_test.jpg)
 ![](Preliminary_circuit.jpg)
 
