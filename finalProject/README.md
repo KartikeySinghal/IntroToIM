@@ -14,6 +14,7 @@ I used 2 potentiometers to mimick the knobs of the original Etch-a-Sketch with o
 ### Circuit:
 I know we are supposed to draw all the input components on one side but since this particular circuit was all input I drew potentiometers on one side and buttons on the other.
 ![](Circuit.jpg)
+![](Final_Circuit.jpg)
 
 ### Drawing Samples:
 I am not that good at drawing but I tried to make some basic shapes and make it seem "artistic" by adding some squigly lines. 
