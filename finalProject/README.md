@@ -17,7 +17,7 @@ I know we are supposed to draw all the input components on one side but since th
 ![](Final_Circuit.jpg)
 
 ### Drawing Samples:
-I am not that good at drawing but I tried to make some basic shapes and make it seem "artistic" by adding some squigly lines. 
+I am not that good at drawing but I tried to make some basic shapes and make it seem "artistic" by adding some squigly lines and color variations. 
 
 
 ### Problems and observations:
