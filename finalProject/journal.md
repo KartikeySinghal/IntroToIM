@@ -17,3 +17,8 @@ It took some time but I finally was able to get a second potentiometer for my pr
 Morning Update: I made the actual drawing space in processing where it reads and cleans the input from arduino and draws lines corresponding to the values of the 2 potentiometers to "draw" based on user input. As you can see in the image below, this allows for both straight and squigly lines and diagonals. I now need to add buttons to add more functionality like taking a screenshot or clearing the drawing space.
 
 ![](drawing_test.jpg)
+
+
+Evening Update: I added the button functionality. The 1st button(blue) is for clearing the drawing space. For this, I simple redefine the background color. The 2nd, red button takes and saves a screenshot of the canvas. I use the saveFrame function. By default this function gives the screenshot a file name based ont he frame count. This way I dont have to define a way of naming each file in a unique way. The 3rd, green button when pressed changes the stroke color being used to draw to a new, random color
+
+![](drawing_test_button.jpg)
