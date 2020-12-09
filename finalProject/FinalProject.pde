@@ -71,8 +71,8 @@ void buttonFunctions() {
     background(0);
     stroke(0);
   }
-  if (button2 == 1) {   //saves a screenshot and gives it a name based on frame count
-    saveFrame();
+  if (button2 == 1) {   //saves a screenshot as a jpg and gives it a name based on frame count
+    saveFrame("SS - ####.jpg");
   }
   if (button1 == 1) {   //changes the stroke color to a new, random color
     stroke(random(0, 255), random(0, 255), random(0, 255));
