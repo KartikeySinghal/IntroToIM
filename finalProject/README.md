@@ -39,3 +39,6 @@ Starting Value -> (30,160)
 User Input Value -> (127,69)
 
 This way I can draw seamless lines based on user input
+
+I also learnt something while uploading my drawings to github. By practice, I don't have spaces in my file names. But I accidently left a space in the naming syntax that I gave to the saveFrame function. So when I tried displaying those images in my README, it didnt show. So as it turns out, Github doesnt display images with a space in their name. Should have checked this first lol. I spent 30 mins trying to figure out what went wrong.
+Lesson Learnt: Always check for spaces in file names
