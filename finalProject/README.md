@@ -19,6 +19,9 @@ I know we are supposed to draw all the input components on one side but since th
 ### Drawing Samples:
 I am not that good at drawing but I tried to make some basic shapes and make it seem "artistic" by adding some squigly lines and color variations. 
 ![](SS-4577.jpg)
+![](SS-5930.jpg)
+![](SS-12057.jpg)
+![](SS-34767.jpg)
 
 ### Problems and observations:
 One of the problems I had was how to actually draw based on the input of the user. It was relatively easy to get that input. But to draw, i experimented with several ways. I initially tried to use the point function to draw dots. But this gave me staggered lines, which could be seen as an artistic look but I wanted to stay true to the original toy. So I ended up using the line function to draw a line from 2 preset values, in this case 0,0 to the position given by the 2 potentiometers. After every input cycle, I simply change those 2 preset values as the values given by the user and the endpoints as new input.
