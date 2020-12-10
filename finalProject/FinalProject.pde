@@ -32,7 +32,7 @@ void setup() {
 
 void draw() {
   
-  buttonFunctions(); //calls the button functuionality
+  buttonFunctions(); //calls the button functionality
 
   // map these values so they are scaled to the sketch
   float x = map(inValue1, 0, 255, 0, width);
@@ -69,10 +69,11 @@ void serialEvent(Serial myPort)
 void buttonFunctions() {
   if (button3 == 1) {   //Clears the drawing space
     background(0);
-    stroke(0);
+    stroke(255);
+    button3 = 1;
   }
-  if (button2 == 1) {   //saves a screenshot as a jpg and gives it a name based on frame count
-    saveFrame("SS - ####.jpg");
+  if (button2 == 1) {    //saves a screenshot as a jpg and gives it a name based on frame count
+    saveFrame("SS-####.jpg");
   }
   if (button1 == 1) {   //changes the stroke color to a new, random color
     stroke(random(0, 255), random(0, 255), random(0, 255));
