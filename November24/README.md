@@ -5,7 +5,7 @@ For Assignment 10, I made an external controller for my midterm game, which was 
 
 Schematic:
 
-![](Schematic.jpg)
+![](Schematic.jpeg)
 
 Video:
 
